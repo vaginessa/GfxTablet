@@ -1,52 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>GfxTablet by rfc2822</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="GfxTablet : Android app to control a virtual Network Tablet on Linux">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>GfxTablet</title>
   </head>
+
   <body>
 
-      <header>
-        <h1>GfxTablet</h1>
-        <p>Android app to control a virtual Network Tablet on Linux</p>
-      </header>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/rfc2822/GfxTablet">View on GitHub</a>
 
-      <div id="banner">
-        <span id="logo"></span>
+          <h1 id="project_title">GfxTablet</h1>
+          <h2 id="project_tagline">Android app to control a virtual Network Tablet on Linux</h2>
 
-        <a href="https://github.com/rfc2822/GfxTablet" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/rfc2822/GfxTablet/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/rfc2822/GfxTablet/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/rfc2822/GfxTablet/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/rfc2822/GfxTablet/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <p>To be informed about updates:</p>
 
 <ul>
-<li><a href="http://twitter.com/GfxTablet">follow GfxTablet on Twitter</a></li>
+<li><a href="https://twitter.com/GfxTablet">follow GfxTablet on Twitter</a></li>
 <li><a href="http://feeds.feedburner.com/GfxTablet">subscribe to our RSS/Atom feed</a></li>
 <li><a href="http://feedburner.google.com/fb/a/mailverify?uri=GfxTablet">subscribe to email notifications</a></li>
-</ul><h1>
-<a name="what-is-gfxtablet" class="anchor" href="#what-is-gfxtablet"><span class="octicon octicon-link"></span></a>What is GfxTablet?</h1>
+</ul>
+
+<h1>
+<a id="what-is-gfxtablet" class="anchor" href="#what-is-gfxtablet" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is GfxTablet?</h1>
 
 <p>GfxTablet shall make it possible to use your Android device (especially
 tablets) like a graphics tablet.</p>
@@ -56,7 +50,9 @@ tablets) like a graphics tablet.</p>
 <ul>
 <li>the GfxTablet Android app</li>
 <li>the input driver for your PC</li>
-</ul><p>The GfxTablet app sends motion and touch events via UDP to a specified host
+</ul>
+
+<p>The GfxTablet app sends motion and touch events via UDP to a specified host
 on port 40118.</p>
 
 <p>The input driver must be installed on your PC. It creates a virtual "network tablet"
@@ -71,48 +67,54 @@ for instance <em>use GIMP with your Android tablet as a graphics tablet</em>
 <p>If you want to support this project, please consider a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=ZT8F5NRCBDB2C&amp;no_note=0&amp;no_shipping=1&amp;currency_code=EUR&amp;item_name=GfxTablet+donation">donation via PayPal</a>.</p>
 
 <h2>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>GfxTablet is licensed under The MIT License.</p>
 
-<p>Author: Richard Hirner</p>
-
-<p>Powered by <a href="http://www.bitfire.at">bitfire web engineering</a> / <a href="http://www.gimpusers.com">gimpusers.com</a></p>
+<p>Author: Ricki Hirner / powered by <a href="https://www.bitfire.at">bitfire web engineering</a> / <a href="http://www.gimpusers.com">gimpusers.com</a></p>
 
 <h2>
-<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
 <li>Pressure sensitivity supported</li>
 <li>Size of canvas will be detected and sent to the client</li>
 <li>Option for ignoring events that are not triggered by a stylus pen:
 so you can lay your hand on the tablet and draw with the pen.</li>
-</ul><h2>
-<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+</ul>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ul>
 <li>App: Any device with Android 4.0+ and touch screen</li>
 <li>Driver: Linux with uinput kernel module (included in modern versions of Fedora, Ubuntu etc.)</li>
-</ul><p>If you use Xorg (you probably do):</p>
+</ul>
+
+<p>If you use Xorg (you probably do):</p>
 
 <ul>
 <li>Xorg-evdev module loaded and configured
 Probably on by default, but if it doesn't work, you may need to activate the
 module: see <a href="https://github.com/rfc2822/GfxTablet/issues/7#issuecomment-13338216">https://github.com/rfc2822/GfxTablet/issues/7#issuecomment-13338216</a>
 </li>
-</ul><h1>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+</ul>
+
+<h1>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h1>
 
 <p>Github repository: <a href="http://github.com/rfc2822/GfxTablet">http://github.com/rfc2822/GfxTablet</a></p>
 
 <h2>
-<a name="part-1-uinput-driver" class="anchor" href="#part-1-uinput-driver"><span class="octicon octicon-link"></span></a>Part 1: uinput driver</h2>
+<a id="part-1-uinput-driver" class="anchor" href="#part-1-uinput-driver" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 1: uinput driver</h2>
 
 <p>On your PC, either download one of these binaries (don't forget to <code>chmod a+x</code> it):</p>
 
 <ul>
 <li><a href="https://github.com/rfc2822/GfxTablet/blob/binaries/networktablet-x86_64?raw=true">networktablet 64-bit, dynamically linked, tested with Fedora 18 and Ubuntu 12.10</a></li>
-</ul><p>or compile it yourself (don't be afraid, it's only one file)</p>
+</ul>
+
+<p>or compile it yourself (don't be afraid, it's only one file)</p>
 
 <ol>
 <li>Clone the repository:
@@ -120,7 +122,9 @@ module: see <a href="https://github.com/rfc2822/GfxTablet/issues/7#issuecomment-
 </li>
 <li>Install gcc, make and linux kernel header includes (<code>kernel-headers</code> on Fedora)</li>
 <li><code>cd driver-uinput; make</code></li>
-</ol><p>Then, run the binary. The driver runs in user-mode, so it doesn't need any special privileges.
+</ol>
+
+<p>Then, run the binary. The driver runs in user-mode, so it doesn't need any special privileges.
 However, it needs access to <code>/dev/uinput</code>. If your distribution doesn't create a group for
 uinput access, you'll need to do it yourself or just run the driver as root:</p>
 
@@ -135,37 +139,81 @@ which use the device may be confused by that and could crash.</p>
 <p><code>networktablet</code> will display a status line for every touch/motion event it receives.</p>
 
 <h2>
-<a name="part-2-app" class="anchor" href="#part-2-app"><span class="octicon octicon-link"></span></a>Part 2: App</h2>
+<a id="part-2-app" class="anchor" href="#part-2-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 2: App</h2>
 
 <p>You can either</p>
 
 <ol>
 <li>compile the app from the source code in the Git repository, or</li>
 <li>
-<a href="https://f-droid.org/repository/browse/?fdcategory=Multimedia&amp;fdid=at.bitfire.gfxtablet">download it from the open-source market F-Droid</a> (**recommended**), or</li>
-<li><a href="http://apps.samsung.com/earth/topApps/topAppsDetail.as?productId=000000662994">download it from Samsung Apps</a></li>
+<a href="https://f-droid.org/repository/browse/?fdcategory=Multimedia&amp;fdid=at.bitfire.gfxtablet">download it from the open-source market F-Droid</a> (<strong>recommended</strong>), or</li>
+<li>download it from Samsung Galaxy Apps, or</li>
+<li>
+<a href="https://github.com/rfc2822/GfxTablet/releases">download it directly from Github</a>, or</li>
 <li><a href="https://play.google.com/store/apps/details?id=at.bitfire.gfxtablet">download it from Google Play</a></li>
-</ol><p>After installing, enter your host IP in the Settings / Host name and it should be ready.</p>
+</ol>
+
+<p>After installing, enter your host IP in the Settings / Host name and it should be ready.</p>
 
 <h2>
-<a name="part-3-use-it" class="anchor" href="#part-3-use-it"><span class="octicon octicon-link"></span></a>Part 3: Use it</h2>
+<a id="part-3-use-it" class="anchor" href="#part-3-use-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 3: Use it</h2>
 
 <p>Now you can use your tablet as an input device in every Linux application (including X.org
 applications). For instance, when networktablet is running, GIMP should have a "Network Tablet"
 entry in "Edit / Input Devices". Set its mode to "Screen" and it's ready to use.</p>
 
 <h1>
-<a name="support" class="anchor" href="#support"><span class="octicon octicon-link"></span></a>Support</h1>
+<a id="frequently-asked-questions" class="anchor" href="#frequently-asked-questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Frequently Asked Questions</h1>
+
+<h2>
+<a id="using-with-multiple-monitors" class="anchor" href="#using-with-multiple-monitors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using with multiple monitors</h2>
+
+<p>If you're using multiple screens, you can assign the Network Tablet device to a specific screen
+once it's running (thanks to <a href="https://github.com/symbally" class="user-mention">@symbally</a> and <a href="https://github.com/Evi1M4chine" class="user-mention">@Evi1M4chine</a>, <a href="https://github.com/rfc2822/GfxTablet/issues/30#issuecomment-30605827">https://github.com/rfc2822/GfxTablet/issues/30#issuecomment-30605827</a>):</p>
+
+<ol>
+<li>Use <code>xrandr</code> to identify which monitor you would like to have the stylus picked up on.</li>
+<li>Use xinput --list to identify the "Network Tablet"</li>
+<li>Do <code>xinput map-to-output "$( xinput list --id-only "Network Tablet" )" DVI-I-1</code> (here, <code>DVI-I-1</code>
+is the assigned monitor).</li>
+</ol>
+
+<h1>
+<a id="support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support</h1>
 
 <p>For bug reports, please use the <a href="https://github.com/rfc2822/GfxTablet/issues">Github issues page</a>
 or just fork the repository, fix the bug and send a merge request.</p>
+
+<h2>
+<a id="donate" class="anchor" href="#donate" aria-hidden="true"><span class="octicon octicon-link"></span></a>Donate</h2>
+
+<p>If you find GfxTablet useful, please feel free to send a donation:</p>
+
+<p><strong>PayPal:</strong> <a href="mailto:info@bitfire.at">info@bitfire.at</a></p>
+
+<p><strong>BitCoin:</strong> 1KSCy7RHztKuhW9fLLaUYqdwdC2iwbejZU</p>
+
+<p><strong>Wire transfer:</strong></p>
+
+<ul>
+<li>Account name: bitfire web engineering</li>
+<li>IBAN: AT81 1400 0272 1006 2055</li>
+<li>BIC: BAWAATWW</li>
+<li>Reference text: GfxTablet</li>
+</ul>
+
+<p><a href="https://flattr.com/submit/auto?user_id=info@bitfire.at&amp;url=https://github.com/rfc2822/GfxTablet&amp;title=GfxTablet&amp;language=&amp;tags=github&amp;category=software"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this repository"></a></p>
       </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/rfc2822">rfc2822</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">GfxTablet maintained by <a href="https://github.com/rfc2822">rfc2822</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -176,6 +224,7 @@ or just fork the repository, fix the bug and send a merge request.</p>
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
+
 
   </body>
 </html>
