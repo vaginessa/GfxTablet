@@ -110,7 +110,7 @@ need to activate the module: see <a href="https://github.com/rfc2822/GfxTablet/i
 <p>On your PC, either download one of these binaries (don't forget to <code>chmod a+x</code> it):</p>
 
 <ul>
-<li><a href="https://github.com/rfc2822/GfxTablet/blob/binaries/networktablet-x86_64?raw=true">networktablet 64-bit, dynamically linked, tested with Fedora 18 and Ubuntu 12.10</a></li>
+<li><a href="https://github.com/rfc2822/GfxTablet/blob/binaries/networktablet-x86_64?raw=true">networktablet 64-bit, dynamically linked, tested with Fedora 18 and Ubuntu 15.04</a></li>
 </ul>
 
 <p>or compile it yourself (don't be afraid, it's only one file)</p>
@@ -120,7 +120,7 @@ need to activate the module: see <a href="https://github.com/rfc2822/GfxTablet/i
 <code>git clone git://github.com/rfc2822/GfxTablet.git</code>
 </li>
 <li>Install gcc, make and linux kernel header includes (<code>kernel-headers</code> on Fedora)</li>
-<li><code>cd driver-uinput; make</code></li>
+<li><code>cd GfxTablet/driver-uinput; make</code></li>
 </ol>
 
 <p>Then, run the binary. The driver runs in user-mode, so it doesn't need any special privileges.
