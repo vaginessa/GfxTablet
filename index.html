@@ -64,7 +64,7 @@ for instance <em>use GIMP with your Android tablet as a graphics tablet</em>
 
 <p>Homepage: <a href="https://rfc2822.github.io/GfxTablet/">https://rfc2822.github.io/GfxTablet/</a></p>
 
-<p>If you want to support this project, please consider a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=ZT8F5NRCBDB2C&amp;no_note=0&amp;no_shipping=1&amp;currency_code=EUR&amp;item_name=GfxTablet+donation">donation via PayPal</a>.</p>
+<p>If you want to support this project, please consider a <a href="#donate">donation</a>.</p>
 
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
@@ -171,10 +171,9 @@ entry in "Edit / Input Devices". Set its mode to "Screen" and it's ready to use.
 once it's running (thanks to <a href="https://github.com/symbally" class="user-mention">@symbally</a> and <a href="https://github.com/Evi1M4chine" class="user-mention">@Evi1M4chine</a>, <a href="https://github.com/rfc2822/GfxTablet/issues/30#issuecomment-30605827">https://github.com/rfc2822/GfxTablet/issues/30#issuecomment-30605827</a>):</p>
 
 <ol>
-<li>Use <code>xrandr</code> to identify which monitor you would like to have the stylus picked up on.</li>
-<li>Use xinput --list to identify the "Network Tablet"</li>
-<li>Do <code>xinput map-to-output "$( xinput list --id-only "Network Tablet" )" DVI-I-1</code> (here, <code>DVI-I-1</code>
-is the assigned monitor).</li>
+<li>Use <code>xrandr</code> to identify which monitor you would like to have the stylus picked up on. In this example, <code>DVI-I-1</code>
+is the display to assign.</li>
+<li>Do <code>xinput map-to-output "$( xinput list --id-only "Network Tablet" )" DVI-I-1</code>.</li>
 </ol>
 
 <h2>
@@ -195,7 +194,7 @@ or just fork the repository, fix the bug and send a merge request.</p>
 
 <p>If you find GfxTablet useful, please feel free to send a donation:</p>
 
-<p><strong>PayPal:</strong> <a href="mailto:info@bitfire.at">info@bitfire.at</a></p>
+<p><strong>PayPal:</strong> <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=ZT8F5NRCBDB2C&amp;no_note=0&amp;no_shipping=1&amp;currency_code=EUR&amp;item_name=GfxTablet+donation">info@bitfire.at</a></p>
 
 <p><strong>BitCoin:</strong> 1KSCy7RHztKuhW9fLLaUYqdwdC2iwbejZU</p>
 
