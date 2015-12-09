@@ -1,42 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="GfxTablet : Android app to control a virtual Network Tablet on Linux">
+    <title>GfxTablet by rfc2822</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>GfxTablet</title>
   </head>
-
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/rfc2822/GfxTablet">View on GitHub</a>
+      <header>
+        <h1>GfxTablet</h1>
+        <p>Android app to control a virtual Network Tablet on Linux</p>
+      </header>
 
-          <h1 id="project_title">GfxTablet</h1>
-          <h2 id="project_tagline">Android app to control a virtual Network Tablet on Linux</h2>
+      <div id="banner">
+        <span id="logo"></span>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/rfc2822/GfxTablet/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/rfc2822/GfxTablet/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+        <a href="https://github.com/rfc2822/GfxTablet" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/rfc2822/GfxTablet/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/rfc2822/GfxTablet/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
         <p>To be informed about updates:</p>
 
 <ul>
 <li><a href="https://twitter.com/GfxTablet">follow GfxTablet on Twitter</a></li>
-<li><a href="http://feeds.feedburner.com/GfxTablet">subscribe to our RSS/Atom feed</a></li>
-<li><a href="https://forums.bitfire.at/category/3/gfxtablet">ICSdroid forum</a></li>
+<li><a href="https://forums.bitfire.at/category/3/gfxtablet">GfxTablet forum</a></li>
 </ul>
 
 <h1>
@@ -62,11 +69,11 @@ on your PC that is controlled by your Android device.</p>
 for instance <em>use GIMP with your Android tablet as a graphics tablet</em>
 (even pressure-sensitive, if your hardware supports it).</p>
 
-<p>Homepage: <a href="https://rfc2822.github.io/GfxTablet/">https://rfc2822.github.io/GfxTablet/</a></p>
+<p>Homepage: <a href="https://gfxtablet.bitfire.at">https://gfxtablet.bitfire.at</a></p>
 
 <p>Help and discussion: <a href="https://forums.bitfire.at/category/3/gfxtablet">https://forums.bitfire.at/category/3/gfxtablet</a></p>
 
-<p>If you want to support this project, please consider a <a href="#donate">donation</a>.</p>
+<p>If you want to support this project, please consider a <a href="https://gfxtablet.bitfire.at/donate">donation</a>.</p>
 
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
@@ -111,7 +118,7 @@ need to <a href="https://forums.bitfire.at/topic/15/gfxtablet-and-archlinux">act
 <p>On your PC, either download one of these binaries (don't forget to <code>chmod a+x</code> it):</p>
 
 <ul>
-<li><a href="https://github.com/rfc2822/GfxTablet/blob/binaries/networktablet-x86_64?raw=true">networktablet 64-bit, dynamically linked, tested with Fedora 18 and Ubuntu 15.04</a></li>
+<li><a href="https://github.com/rfc2822/GfxTablet/releases/download/1.4/networktablet">networktablet 64-bit, dynamically linked, tested with Fedora 23</a></li>
 </ul>
 
 <p>or compile it yourself (don't be afraid, it's only one file)</p>
@@ -146,7 +153,7 @@ which use the device may be confused by that and could crash.</p>
 <ol>
 <li>compile the app from the source code in the Git repository, or</li>
 <li>
-<a href="https://f-droid.org/repository/browse/?fdcategory=Multimedia&amp;fdid=at.bitfire.gfxtablet">download it from the open-source market F-Droid</a> (<strong>recommended</strong>), or</li>
+<a href="https://f-droid.org/repository/browse/?fdcategory=Multimedia&amp;fdid=at.bitfire.gfxtablet">download it from the open-source market F-Droid</a>, or</li>
 <li>download it from Samsung Galaxy Apps, or</li>
 <li>
 <a href="https://github.com/rfc2822/GfxTablet/releases">download it directly from Github</a>, or</li>
@@ -187,33 +194,16 @@ is the display to assign.</li>
 <h2>
 <a id="donate" class="anchor" href="#donate" aria-hidden="true"><span class="octicon octicon-link"></span></a>Donate</h2>
 
-<p>If you find GfxTablet useful, please feel free to send a donation:</p>
+<p>If you find GfxTablet useful, please feel free to <a href="https://gfxtablet.bitfire.at/donate">send a donation</a>.</p>
 
-<p><strong>PayPal:</strong> <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=ZT8F5NRCBDB2C&amp;no_note=0&amp;no_shipping=1&amp;currency_code=EUR&amp;item_name=GfxTablet+donation">info@bitfire.at</a></p>
-
-<p><strong>BitCoin:</strong> 1KSCy7RHztKuhW9fLLaUYqdwdC2iwbejZU</p>
-
-<p><strong>Wire transfer:</strong></p>
-
-<ul>
-<li>Account name: bitfire web engineering</li>
-<li>IBAN: AT81 1400 0272 1006 2055</li>
-<li>BIC: BAWAATWW</li>
-<li>Reference text: GfxTablet</li>
-</ul>
-
-<p><a href="https://flattr.com/submit/auto?user_id=bitfire&amp;url=https://github.com/rfc2822/GfxTablet&amp;title=GfxTablet&amp;language=&amp;tags=github&amp;category=software"><img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this repository"></a></p>
+<p><a href="https://flattr.com/submit/auto?user_id=bitfire&amp;url=https://gfxtablet.bitfire.at&amp;title=GfxTablet&amp;category=software"><img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr GfxTablet"></a></p>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">GfxTablet maintained by <a href="https://github.com/rfc2822">rfc2822</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/rfc2822">rfc2822</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -224,7 +214,6 @@ is the display to assign.</li>
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
-
 
   </body>
 </html>
